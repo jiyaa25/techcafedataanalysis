@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Café: Interactive Sales Story</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Tech Café: Data Analysis & Storytelling</h1>
+    </header>
+    
+    <section id="introduction">
+        <h2>Why This Study?</h2>
+        <p>As a student, I've always been curious about what fuels our late-night study sessions and quick snack breaks. Whether it's a hot cup of Maggi before an exam or a crispy pakoda between lectures, food choices reveal a lot about student life. This curiosity led me to explore the sales data of Tech Café, a popular hangout spot on campus.</p>
+        <p>I had access to one month of transaction data, which included details on what students were buying the most, how often they made purchases, and which food categories dominated sales. By analyzing this data, I hoped to uncover patterns in student eating habits and, more importantly, find ways to make food accessibility better, healthier, and more convenient.</p>
+        <p>Through this analysis, I discovered some interesting trends—most students preferred ready-to-eat meals or quick-to-cook food items. This insight sparked an idea: could we make hostel dining smarter by integrating vending machines and mini kitchens? With this in mind, I started digging deeper into the numbers, looking for insights that could help shape a better food experience for students.</p>
+    </section>
+    
+    <section id="data-analysis">
+        <h2>Data Insights</h2>
+        
+        <div class="chart-container">
+            <h3>Top Sales Per Category</h3>
+            <canvas id="categorySalesChart"></canvas>
+            <p>This chart highlights the highest-selling food categories, revealing a strong preference for quick and easy-to-consume food items.</p>
+        </div>
+
+        <h2>Distribution of Items by Category</h2>
+        
+        <div class="chart-container">
+            <h3>Sales of Items in Chinese Cuisine</h3>
+            <canvas id="chineseSalesChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h3>Sales of Items in Cutlet & Pakoda</h3>
+            <canvas id="cutletPakodaChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h3>Sales of Items in Maggi & Pasta</h3>
+            <canvas id="maggiPastaChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h3>Sales of Items in Pav-Based Dishes</h3>
+            <canvas id="pavChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h3>Sales of Items in Pizza</h3>
+            <canvas id="pizzaChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h3>Top 20 Best-Selling Items</h3>
+            <canvas id="top20ItemsChart"></canvas>
+            <p>This visualization showcases the most frequently bought items, predominantly ready-to-eat or quick-to-cook options.</p>
+        </div>
+
+        <div class="chart-container">
+            <h3>Sales Concentration</h3>
+            <canvas id="salesConcentrationChart"></canvas>
+            <p>Analysis of sales concentration shows that 80% of the sales come from the top 20 items.</p>
+        </div>
+    </section>
+    
+    <section id="solution">
+        <h2>Smart Vending Machines & Mini Kitchens: A Practical Solution</h2>
+        <p>The analysis of Tech Café's sales data highlights a clear trend—students prefer food that is quick and easy to prepare. To address this need while promoting better food choices, a combination of smart vending machines and mini kitchen spaces in hostels can be an effective solution.</p>
+        <p>Based on our findings, a solution emerges: vending machines stocked with fresh meal kits and a mini kitchen setup in hostels. This approach addresses key concerns:</p>
+        <h3>Smart Vending Machines</h3>
+        <p>Unlike traditional vending machines that mainly offer chips and sodas, these smart machines would be stocked with fresh ingredients and ready-to-cook meal kits. Items like pasta, oats, fresh vegetables, and pre-portioned spice mixes would allow students to prepare simple meals without the need for excessive time or cooking skills.</p>
+        <p>The vending machines would use real-time tracking sensors to monitor inventory and ensure freshness. If certain ingredients run low, an automated system would notify suppliers for timely restocking, reducing the risk of stockouts. Additionally, AI-driven meal recommendations could suggest popular or balanced meal combinations, making it easier for students to choose nutritious options.</p>
+        <h3>Mini Kitchens for Quick Cooking</h3>
+        <p>Since not all students have access to a proper kitchen, designated mini cooking stations within hostels can complement these vending machines. These spaces would be equipped with basic appliances like induction stoves, microwaves, and utensils, allowing students to prepare their meals conveniently.</p>
+        <ul>
+            <li><strong>Convenience:</strong> Instant access to ingredients and cooking equipment.</li>
+            <li><strong>Cost-Effectiveness:</strong> Cooking is more affordable than regularly buying ready-made food.</li>
+            <li><strong>24/7 Availability:</strong> Addresses late-night food needs without relying on expensive delivery services.</li>
+            <li><strong>Smart Features:</strong> Contactless payments and mobile app connectivity enhance usability.</li>
+        </ul>
+        <p>By integrating technology with everyday food needs, these vending machines and mini kitchens provide a sustainable, student-friendly solution. This initiative could improve food accessibility while maintaining affordability and variety.</p>
+    </section>
+    
+    <section id="conclusion">
+        <h2>Final Thoughts</h2>
+        <p>The sales data from Tech Café gives us a clear picture of student eating habits and an opportunity to improve food accessibility in hostels. By introducing smart vending machines and shared kitchens, we can make food more convenient and healthier for students.</p>
+        <p>With this system, students have better control over their meals without sacrificing quality or cost. In the future, we can enhance this idea with AI-driven meal recommendations and dynamic pricing based on demand.</p>
+        <p>In the end, the data shows that most top-selling items are either ready-to-eat or easy-to-cook, highlighting the need for better, more accessible food options for students.</p>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
